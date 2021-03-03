@@ -9,14 +9,14 @@ class BaseBuildFramework {
             scm {
                 git {
                     remote {
-                        url("git@github.com:NorthfieldIT/jenkins-inspec-runner.git")
-                        branch('master')
+                        url("git@github.com:pragyav097/chef.git")
+                        branch('main')
                     }
                 }
             }
             steps {
                 shell('bundle install')
-                shell("inspec exec policies/* -t ssh://root@${node}  -i ~/.ssh/inspec_rsa")
+                shell("inspec exec chef-demo/* -t ssh://root@${node}  -i ~/.ssh/inspec_rsa")
             }
         }
     }
