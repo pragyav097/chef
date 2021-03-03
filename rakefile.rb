@@ -2,7 +2,7 @@
 require 'chef-api'
 include ChefAPI::Resource
 
-YOUR_CHEF_SERVER = 'https://api.chef.io/organizations/MY_ORG'
+YOUR_CHEF_SERVER = 'https://api.chef.io/organizations/pragyav'
 
 
 task :generate_jobs_file do
